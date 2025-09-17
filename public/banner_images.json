@@ -1,0 +1,17 @@
+[
+    {
+        "id" : 1,
+        "title" : "abcd",
+        "img" : "https://res.cloudinary.com/dqcuufrdo/image/upload/v1757564952/chondraboti_banner1_lpjqty.jpg"
+    },
+    {
+        "id" : 2,
+        "title" : "abcd",
+        "img" : "https://res.cloudinary.com/dqcuufrdo/image/upload/v1757564952/chondraboti_banner2_z2l4fw.jpg"
+    },
+    {
+        "id" : 3,
+        "title" : "abcd",
+        "img" : "https://res.cloudinary.com/dqcuufrdo/image/upload/v1757564952/chondraboti_banner3_cy7cxi.jpg"
+    }
+]

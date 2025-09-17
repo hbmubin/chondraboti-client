@@ -1,0 +1,174 @@
+[
+  {
+    "id": 1,
+    "name": "Men",
+    "image": "https://via.placeholder.com/300x200?text=Men",
+    "children": [
+      {
+        "id": 11,
+        "name": "Panjabi Pajama Sets",
+        "slug": "men/panjabi-pajama-sets",
+        "children": [
+          {
+            "id": 111,
+            "name": "Cotton & Blends",
+            "catalogue": "cotton-&-blends",
+            "slug": "men/panjabi-pajama-sets"
+          },
+          {
+            "id": 112,
+            "name": "Silk & Premium",
+            "catalogue": "silk-&-premium",
+            "slug": "men/panjabi-pajama-sets"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "T-Shirts & Polos",
+        "slug": "men/tshirts-&-polos",
+        "children": [
+          {
+            "id": 131,
+            "name": "Graphic Tees",
+            "slug": "men/tshirts-&-polos",
+            "catalogue": "graphic-tees"
+          },
+          {
+            "id": 132,
+            "name": "Plain Basics",
+            "slug": "men/tshirts-&-polos",
+            "catalogue": "plain-basics"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Winter Wear",
+        "slug": "men/winter-wear",
+        "children": [
+          {
+            "id": 141,
+            "name": "Jackets",
+            "slug": "men/winter-wear",
+            "catalogue": "jackets"
+          },
+          {
+            "id": 142,
+            "name": "Sweaters",
+            "slug": "men/winter-wear",
+            "catalogue": "sweaters"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Women",
+    "image": "https://via.placeholder.com/300x200?text=Women",
+    "children": [
+      {
+        "id": 21,
+        "name": "Saree",
+        "slug": "women/saree",
+        "children": [
+          {
+            "id": 211,
+            "name": "Silk Sarees",
+            "slug": "women/saree",
+            "catalogue": "silk-sarees"
+          },
+          {
+            "id": 212,
+            "name": "Cotton & Blends",
+            "slug": "women/saree",
+            "catalogue": "cotton-&-blends"
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "name": "Salwar Kameez",
+        "slug": "women/salwar-kameez",
+        "children": []
+      },
+      {
+        "id": 23,
+        "name": "Kurtis & Tunics",
+        "slug": "women/kurtis-&-tunics",
+        "children": []
+      },
+      {
+        "id": 24,
+        "name": "Western Wear",
+        "slug": "women/western-wear",
+        "children": [
+          {
+            "id": 241,
+            "name": "Dresses",
+            "slug": "women/western-wear",
+            "catalogue": "dresses"
+          },
+          {
+            "id": 242,
+            "name": "Tops & Blouses",
+            "slug": "women/western-wear",
+            "catalogue": "tops-&-blouses"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Kids",
+    "image": "https://via.placeholder.com/300x200?text=Kids",
+    "children": [
+      {
+        "id": 31,
+        "name": "Boys Clothing",
+        "slug": "kids/boys-clothing",
+        "children": [
+          {
+            "id": 311,
+            "name": "T-Shirts",
+            "slug": "kids/boys-clothing",
+            "catalogue": "boys-tshirts"
+          },
+          {
+            "id": 312,
+            "name": "Shorts",
+            "slug": "kids/boys-clothing",
+            "catalogue": "boys-shorts"
+          }
+        ]
+      },
+      {
+        "id": 32,
+        "name": "Girls Clothing",
+        "slug": "kids/girls-clothing",
+        "children": [
+          {
+            "id": 321,
+            "name": "Frocks",
+            "slug": "kids/girls-clothing",
+            "catalogue": "frocks"
+          },
+          {
+            "id": 322,
+            "name": "Leggings",
+            "slug": "kids/girls-clothing",
+            "catalogue": "leggings"
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "name": "Baby Wear",
+        "slug": "kids/baby-wear",
+        "children": []
+      }
+    ]
+  }
+]

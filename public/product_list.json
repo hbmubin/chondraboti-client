@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "product_name": "Light Olive Printed Cotton Slim Fit Panjabi Pajama Set",
+    "product_code": "P234",
+    "categories": [
+      "Men",
+      "Panjabi Pajama Sets"
+    ],
+    "slug": "men/panjabi-pajama-sets",
+    "catalogue": "cotton-&-blends",
+    "description": "A comfortable slim-fit Panjabi pajama set made from premium printed cotton, perfect for festive occasions.",
+    "price": 2500,
+    "discount_price": 2200,
+    "sizes": ["38", "40", "42", "44"],
+    "images": [
+      "https://i.ibb.co.com/chWDDpFR/man-1.png",
+      "https://i.ibb.co.com/tpQP0mQp/jew-1.png"
+    ]
+  },
+  {
+    "id": 2,
+    "product_name": "Navy Blue Premium Cotton Shirt",
+    "product_code": "S456",
+    "categories": [
+      "Men",
+      "Shirt"
+    ],
+    "slug": "men/shirt",
+    "catalogue": "cotton-&-blends",
+    "description": "Premium navy blue cotton shirt suitable for casual and semi-formal wear.",
+    "price": 1800,
+    "discount_price": 1500,
+    "sizes": ["M", "L", "XL", "XXL"],
+    "images": [
+      "https://i.ibb.co.com/chWDDpFR/man-1.png",
+      "https://i.ibb.co.com/tpQP0mQp/jew-1.png"
+    ]
+  },
+  {
+    "id": 3,
+    "product_name": "Elegant Black Georgette Saree",
+    "product_code": "SR789",
+    "categories": [
+      "Women",
+      "Saree"
+    ],
+    "slug": "women/saree",
+    "catalogue": "cotton-&-blends",
+    "description": "Elegant black saree made from soft georgette fabric with intricate border work.",
+    "price": 3200,
+    "discount_price": 2800,
+    "images": [
+      "https://i.ibb.co.com/chWDDpFR/man-1.png",
+      "https://i.ibb.co.com/tpQP0mQp/jew-1.png"
+    ]
+  }
+]
