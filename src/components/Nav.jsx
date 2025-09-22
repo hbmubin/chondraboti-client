@@ -1,7 +1,7 @@
 import { useContext, useEffect, useRef } from "react";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebook, FaYoutube } from "react-icons/fa";
-import { FiMenu, FiSearch } from "react-icons/fi";
+import { FiMenu } from "react-icons/fi";
 import { IoCallOutline, IoClose } from "react-icons/io5";
 import { MdOutlineMail, MdOutlineShoppingCart } from "react-icons/md";
 import { UtiContext } from "../provider/UtiProvider";
@@ -10,6 +10,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router";
 import MenuAccordion from "./MenuAccordion";
 import useCategories from "../hooks/useCategories";
+import SearchNav from "../components/home/SearchNav";
 
 const Nav = () => {
   const {data:categories} = useCategories();
@@ -48,19 +49,19 @@ const Nav = () => {
               <span>
                 <MdOutlineMail color="#e7e5e4" size={16} />
               </span>
-              <span> chandrabatifashion@gmail.com</span>
+              <span> chondrabotifashion@gmail.com</span>
             </span>
             <span className="flex items-center gap-1">
               <span>
                 <IoCallOutline color="#e7e5e4" size={14} />
               </span>
-              <span> 028384888484</span>
+              <span>+8801571076572</span>
             </span>
           </div>
           <div className="flex text-sm text-stone-200 items-center gap-3">
             <span>Connect with:</span>
             <div className="flex gap-2 items-center">
-              <a href="#">
+              <a href="https://www.facebook.com/chondrabotifashion">
                 <FaFacebook size={16} color="#e7e5e4" />
               </a>
               <a href="#">
@@ -84,12 +85,7 @@ const Nav = () => {
             </Link>
           </div>
           <div className="flex sm:gap-10 gap-4 items-center">
-            <div className=" h-min flex overflow-hidden border-stone-800 border-b">
-              <a href="#" className=" py-2  text-stone-800">
-                <FiSearch color="inherit" size={24} />
-              </a>
-              <input className="border-0  outline-0 px-2 md:w-96 w-36 max-w-full placeholder:text-xs placeholder:md:text-base text-stone-800" type="text" placeholder="Search your product" />
-            </div>
+            <SearchNav></SearchNav>
             <span className="text-white bg-stone-800 p-1.5 size-fit">
               <MdOutlineShoppingCart size={24} color="inherit" />
             </span>

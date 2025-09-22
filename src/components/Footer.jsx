@@ -1,7 +1,7 @@
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebook, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { IoCallOutline } from "react-icons/io5";
-import { MdOutlineLocationOn, MdOutlineMail } from "react-icons/md";
+import { MdContentCopy, MdOutlineLocationOn, MdOutlineMail } from "react-icons/md";
 import logo from "../assets/image/Logo.png";
 
 const Footer = () => {
@@ -12,16 +12,17 @@ const Footer = () => {
           <div>
             <img className="w-32" src={logo} alt="" />
           </div>
-          <div className="mt-4">
-            <a href="https://wa.me/+028384888484" className="flex items-center gap-4 hover:opacity-75 border py-2 px-4 text-white rounded-xl w-fit">
+          <div className="mt-4 flex items-center gap-2">
+            <a href="https://wa.me/+8801571076572" className="flex items-center gap-4 hover:opacity-75 border py-2 px-4 text-white rounded-xl w-fit">
               <span className="border-r pr-3">
                 <FaWhatsapp color="white" size={28} />
               </span>
               <div className="flex flex-col">
-                <span className="text-xs">10 AM - 11 PM</span>
-                <span className="text-base text-blue-500"> 028384888484</span>
+                <span className="text-xs text-stone-300">10 AM - 11 PM</span>
+                <span className="text-base text-blue-500">01571076572</span>
               </div>
             </a>
+            <div onClick={() => {navigator.clipboard.writeText("+8801571076572"), alert("Number copied!")}} title="copy number" className="border py-2 px-4 flex justify-center items-center text-white rounded-xl h-full cursor-pointer"><MdContentCopy color="white" size={24} /></div>
           </div>
         </div>
         <div className=" font-light flex flex-col md:items-start items-center text-center md:text-start">
@@ -48,12 +49,12 @@ const Footer = () => {
         <div className="flex flex-col md:items-start items-center text-center md:text-start">
           <div className="flex flex-col text-stone-300 gap-3 font-light">
             <div className="">
-              <span> Jotey Centre, 389/A-B, New Elephant Road, Dhaka-1205</span>
+              <span> 123 Chondraboti Street, Shahbag, Dhaka-1000</span>
             </div>
             <div>
               <span className="font-semibold text-xl">Email:</span>
-              <a href="mailto:chandrabatifashion@gmail.com" className="text-blue-400 hover:underline">
-                <span> chandrabatifashion@gmail.com</span>
+              <a href="mailto:chondrabotifashion@gmail.com" className="text-blue-400 hover:underline">
+                <span> chondrabotifashion@gmail.com</span>
               </a>
             </div>
             <div className="flex gap-3 items-center md:justify-start justify-center text-stone-400">

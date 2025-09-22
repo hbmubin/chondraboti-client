@@ -6,19 +6,19 @@ import {BounceLoader} from "react-spinners"
 
 
 const OrderModal = ({ setIsOpen, productData }) => {
-  const [selectedMethod, setSelectedMethod] = useState(null);
-  const [selectedDeliveryCharge, setSelectedDeliveryCharge] = useState(null);
-  const [deliveryChargeError, setDeliveryChargeError] = useState("");
-  const [methodError, setMethodError] = useState("");
-  const [isLoading, SetIsLoading] = useState(false)
-
-  const options = [
+    const options = [
     {
       value: "Cash",
       label: "Cash",
       img: <BsCash size={26} />,
     },
   ];
+  const [selectedMethod, setSelectedMethod] = useState(options[0]?.value);
+  const [selectedDeliveryCharge, setSelectedDeliveryCharge] = useState(null);
+  const [deliveryChargeError, setDeliveryChargeError] = useState("");
+  const [methodError, setMethodError] = useState("");
+  const [isLoading, SetIsLoading] = useState(false)
+
   const deliveryChargeList = [
     {
       value: 80,
@@ -76,9 +76,9 @@ const OrderModal = ({ setIsOpen, productData }) => {
       time,
       status: "order request",
     };
-    console.log(order_data);
+    // console.log(order_data);
 
-    fetch("https://script.google.com/macros/s/AKfycbxqlDyyfJNizftsS1B7dd-RDItxAATYar8Qk2ENAisxSB_Je8-h3CJBJuWx6NbTyo0/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbzONgGtW2cGNoUdpep2VIILKtcrYnvq5dG2qxS9WBDhFbS6M-2xx74wrOCrkp3lOTVw/exec", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
@@ -110,7 +110,7 @@ const OrderModal = ({ setIsOpen, productData }) => {
             </div>
           </div>
         ));
-        console.log(res, "Order sent");
+        // console.log(res, "Order sent");
       })
       .catch((err) => console.error(err));
   };

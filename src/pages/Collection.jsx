@@ -6,6 +6,7 @@ import { useParams } from "react-router";
 import useCategories from "../hooks/useCategories";
 import { UtiContext } from "../provider/UtiProvider";
 import { IoClose, IoFilterSharp } from "react-icons/io5";
+import { IoMdFlash } from "react-icons/io";
 
 const Collection = () => {
   const param = useParams();
@@ -177,14 +178,17 @@ const handleCheckChange = (value) => {
         </div>
         <div className="xl:col-span-3 md:col-span-2 px-3">
           <div className="justify-between py-2  hidden md:flex">
-            <a href="#" className="uppercase hot-sale group text-red-500 hover:text-red-400 font-semibold relative">
-              Hot Sale <span className="absolute group-hover:bg-red-400 h-[2.2px] w-full left-0 bottom-0 bg-red-600 animate-hot"></span>
-            </a>
+            <a href="#" className="uppercase hot-sale group text-red-500 hover:text-red-400 font-semibold flex gap-0.5 items-center">
+                          Hot Sale
+                          <span className="animate-hot">
+                            <IoMdFlash size={20} />
+                          </span>
+                        </a>
             <div className="flex gap-3 uppercase font-medium">
-              <a href="#" className="border-r pr-3 hover:text-black/70">
-                ABout Us
+              <a href="/about" className="border-r pr-3 hover:text-black/70">
+                About Us
               </a>
-              <a href="#" className=" hover:text-black/70">
+              <a href="/faqs" className=" hover:text-black/70">
                 FAQS
               </a>
             </div>
@@ -213,6 +217,9 @@ const handleCheckChange = (value) => {
               <ProductCard product={d} key={idx}></ProductCard>
             ))}
           </div>
+          {
+              !orderData?.length && <p className="text-black text-center text-xl pb-10">No Product Found!</p>
+            }
         </div>
       </div>
     </main>

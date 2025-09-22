@@ -77,3 +77,6 @@
 .size-nav:hover .size-nav-ul{
     display: block;
 }
+.res-search{
+    @apply fixed top-5 left-1/2 -translate-x-1/2 bg-white w-11/12 z-3 shadow-xl border border-stone-200 border-b-0
+}
