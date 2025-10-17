@@ -14,7 +14,12 @@ const HomeProducts = ({categoryData}) => {
               <span><IoIosArrowRoundForward size={20} /></span>
             </a>
           </div>
-          <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-3">
+          {/* <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-3">
+            {data?.map(p=><ProductCard key={p.id} product={p}></ProductCard>)}
+          </div> */}
+          <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-3">
+            <div className="hidden lg:block"></div>
+            <div className="hidden lg:block"></div>
             {data?.map(p=><ProductCard key={p.id} product={p}></ProductCard>)}
           </div>
         </section>

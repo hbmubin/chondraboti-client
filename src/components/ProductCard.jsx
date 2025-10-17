@@ -1,30 +1,29 @@
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { SwiperSlide, Swiper } from "swiper/react";
 
 import "swiper/css";
-import { useRef } from "react";
 import { PiEyeLight } from "react-icons/pi";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 const ProductCard = ({product}) => {
-  const swiperRef = useRef(null);
   const slug = product?.product_name.toLowerCase().replace(/\s+/g, '-');
   return (
-    <div className="hover:shadow border border-stone-200 product-card flex flex-col" onMouseEnter={() => swiperRef.current?.autoplay.start()} onMouseLeave={() => swiperRef.current?.autoplay.stop()}>
+    <div className="hover:shadow border border-stone-200 product-card flex flex-col shadow">
       <a className="flex-grow" href={`/${product?.id}/${slug}`}>
         <Swiper
         spaceBetween={30}
         centeredSlides={true}
         speed={800}
-        // autoplay={{
-        //   delay: 1500,
-        //   disableOnInteraction: false,
-        // }}
-        modules={[Autoplay]}
-        className="mySwiper relative group"
-        onSwiper={(swiper) => {
-          swiperRef.current = swiper;
-          swiper.autoplay.stop();
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: true,
         }}
+        navigation={true}
+        modules={[Autoplay, Navigation]}
+        className="mySwiper relative group"
+        // onSwiper={(swiper) => {
+        //   swiperRef.current = swiper;
+        //   swiper.autoplay.stop();
+        // }}
       >
         <div className="absolute bottom-0 z-2 flex gap-2 py-0.5 translate-y-10 group-hover:translate-0 duration-200 items-center text-white bg-[#00000047] w-full justify-center">
           <span>

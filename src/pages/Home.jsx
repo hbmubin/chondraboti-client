@@ -5,13 +5,10 @@ import HomeProducts from "../components/home/HomeProducts";
 import useProductList from "../hooks/useProductList";
 
 const Home = () => {
-    let womenData = useProductList("women","4")
-    womenData.title= "Women Fashion"
-    womenData.link= "collection/women"
+    let borkaData = useProductList("dubai cherry","4")
+    borkaData.title= "Dubai Cherry Borka"
+    borkaData.link= "collection/borka/dubai-cherry"
     
-    let menData = useProductList("men","4")
-    menData.title= "Men Fashion"
-    menData.link= "collection/men"
 
     // console.log(menData)
 
@@ -19,9 +16,8 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <Categories></Categories>
-            <HomeProducts categoryData={womenData}></HomeProducts>
-            <HomeProducts categoryData={menData}></HomeProducts>
+            {/* <Categories></Categories> */}
+            <HomeProducts categoryData={borkaData}></HomeProducts>
         </div>
     );
 };

@@ -1,5 +1,3 @@
-import item1 from "../../assets/image/man-1.png";
-import item2 from "../../assets/image/man-fas.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -10,13 +8,14 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useState } from "react";
 import OrderModal from "./OrderModal";
 import { Toaster } from "react-hot-toast";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
-const ProductTop = ({product}) => {
+const ProductTop = ({ product }) => {
   const [selectedSize, setSelectedSize] = useState(null);
   const [quantity, setQuantity] = useState(1);
   const [isOpen, setIsOpen] = useState(false);
   const [sizeError, setSizeError] = useState("");
-  const [productData, setProductData] = useState(null)
+  const [productData, setProductData] = useState(null);
 
   const decrease = () => {
     setQuantity((q) => (q > 1 ? q - 1 : 1));
@@ -62,26 +61,26 @@ const ProductTop = ({product}) => {
     const product_size = selectedSize || "Common";
     const product_quantity = form.product_quantity.value;
     const product_data = {
-        ...product,
+      ...product,
       product_size,
-      product_quantity
+      product_quantity,
     };
-    setProductData(product_data)
+    setProductData(product_data);
     setIsOpen(true);
   };
   return (
     <div className="product-top">
       <Toaster position="top-center" reverseOrder={false} />
       <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-0 gap-4">
-        <div className="md:px-10">
+        <div className="md:px-6">
           <Swiper
             spaceBetween={30}
             centeredSlides={true}
             speed={800}
-            // autoplay={{
-            //   delay: 5000,
-            //   disableOnInteraction: true,
-            // }}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: true,
+            }}
             pagination={{
               clickable: true,
             }}
@@ -89,20 +88,22 @@ const ProductTop = ({product}) => {
             modules={[Autoplay, Pagination, Navigation]}
             className="mySwiper"
           >
-            <SwiperSlide className="lg:px-24 aspect-[5/6] max-h-96">
+            {product?.images.map((img, idx) => (
+              <SwiperSlide key={idx} className="lg:px-16 aspect-[5/6] max-h-[460px]">
+                <LazyLoadImage className=" object-cover min-h-full min-w-full object-center" src={img} alt="" />
+              </SwiperSlide>
+            ))}
+            {/* <SwiperSlide className="lg:px-24 aspect-[5/6] max-h-96">
               <img className=" object-cover min-h-full min-w-full object-center" src={item1} alt="" />
-            </SwiperSlide>
-            <SwiperSlide className="lg:px-24 aspect-[5/6] max-h-96">
-              <img className=" object-cover min-h-full min-w-full object-center" src={item2} alt="" />
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
         <div>
           <form onSubmit={handleOpenModal}>
             <h2 className="text-2xl font-medium">{product?.product_name}</h2>
             <div className=" md:text-xl text-base pt-3">
-              <span className="font-medium">৳{product?.discount_price}</span> 
-              <span className="line-through md:text-base text-sm text-stone-500 pl-2">৳{product?.price}</span>
+              <span className="font-medium">৳{product?.price}</span>
+              <span className="line-through md:text-base text-sm text-stone-500 pl-2">৳{product?.discount_price}</span>
               <span className="md:text-base text-sm ml-2 text-orange-600 font-medium">{(((product.price - product.discount_price) / product.price) * 100).toFixed(0)}%OFF</span>
             </div>
             <div className={`pt-6 ${!product?.sizes && "hidden"}`}>
@@ -162,9 +163,7 @@ const ProductTop = ({product}) => {
             </div>
             <div className="mt-8">
               <div className="font-medium mt-1">Product Info</div>
-              <p className="text-sm">
-                {product?.description}
-              </p>
+              <p className="text-sm pt-3 leading-relaxed text-gray-700" dangerouslySetInnerHTML={{ __html: product?.description }} />
             </div>
           </form>
         </div>

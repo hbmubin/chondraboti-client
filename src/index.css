@@ -12,6 +12,14 @@
     @apply container xl:max-w-7xl mx-auto
 }
 
+.product-card .swiper-button-prev::after, .product-card .swiper-button-next::after{
+    @apply text-white text-xl; 
+}
+
+.product-card .swiper-button-disabled, .product-details .swiper-button-disabled{
+    display: none !important;
+}
+
 .banner .swiper-button-prev::after, .banner .swiper-button-next::after{
     @apply text-white md:text-3xl text-xl; 
 }

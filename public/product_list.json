@@ -1,58 +1,23 @@
 [
   {
     "id": 1,
-    "product_name": "Light Olive Printed Cotton Slim Fit Panjabi Pajama Set",
-    "product_code": "P234",
-    "categories": [
-      "Men",
-      "Panjabi Pajama Sets"
-    ],
-    "slug": "men/panjabi-pajama-sets",
-    "catalogue": "cotton-&-blends",
-    "description": "A comfortable slim-fit Panjabi pajama set made from premium printed cotton, perfect for festive occasions.",
-    "price": 2500,
-    "discount_price": 2200,
-    "sizes": ["38", "40", "42", "44"],
+    "product_name": "দুবাই চেরি ফ্যাশনেবল এম্ব্রয়ডারি স্টার বোরকা",
+    "product_code": "P2025001",
+    "categories": ["Borka", "Dubai Cherry"],
+    "slug": "borka/dubai-cherry",
+     "catalogue": "Star Borka",
+    "description": "🌙 সৌন্দর্যের পরশে আবৃত হোক তোমার প্রতিটি পদচারণা। ফ্যাশন যখন ধর্মীয় শালীনতার সঙ্গে মিশে যায়, তখনই জন্ম নেয় এক অনন্য সৌন্দর্যের প্রতীক — স্টার এম্ব্রয়ডারি বোরকা। প্রতিটি সেলাই, প্রতিটি নকশায় আছে রুচির ছোঁয়া আর দুবাই ফ্যাশনের আভিজাত্য। দৈনন্দিন ব্যবহার হোক বা বিশেষ কোনো ইভেন্ট — এই বোরকা তোমার স্টাইলকে দেবে এক রাজকীয় রূপ <br/><br/>💎 পণ্যের বৈশিষ্ট্য: ১০০% দুবাই চেরি ফ্যাশনেবল এম্ব্রয়ডারি স্টার বোরকা ফ্রি সাইজ বডি — আরামদায়ক ও মানানসই সুপার সফ্ট ফেব্রিক — সারাদিনের জন্য আরামদায়ক নন-ট্রান্সপারেন্ট — সম্পূর্ণ শালীনতা বজায় রাখে কালার ও সেলাই গ্যারান্টি — দীর্ঘদিন টেকসই সৌন্দর্য<br/><br/> 🚚 সারাদেশে হোম ডেলিভারি!<br/>এক টাকাও অগ্রিম দিতে হবে না — সারা বাংলাদেশে ক্যাশ অন ডেলিভারি সুবিধা!",
+    "price": 1850,
+    "discount_price": 2150,
+    "sizes": ["50", "52", "54", "56"],
     "images": [
-      "https://i.ibb.co.com/chWDDpFR/man-1.png",
-      "https://i.ibb.co.com/tpQP0mQp/jew-1.png"
-    ]
-  },
-  {
-    "id": 2,
-    "product_name": "Navy Blue Premium Cotton Shirt",
-    "product_code": "S456",
-    "categories": [
-      "Men",
-      "Shirt"
-    ],
-    "slug": "men/shirt",
-    "catalogue": "cotton-&-blends",
-    "description": "Premium navy blue cotton shirt suitable for casual and semi-formal wear.",
-    "price": 1800,
-    "discount_price": 1500,
-    "sizes": ["M", "L", "XL", "XXL"],
-    "images": [
-      "https://i.ibb.co.com/chWDDpFR/man-1.png",
-      "https://i.ibb.co.com/tpQP0mQp/jew-1.png"
-    ]
-  },
-  {
-    "id": 3,
-    "product_name": "Elegant Black Georgette Saree",
-    "product_code": "SR789",
-    "categories": [
-      "Women",
-      "Saree"
-    ],
-    "slug": "women/saree",
-    "catalogue": "cotton-&-blends",
-    "description": "Elegant black saree made from soft georgette fabric with intricate border work.",
-    "price": 3200,
-    "discount_price": 2800,
-    "images": [
-      "https://i.ibb.co.com/chWDDpFR/man-1.png",
-      "https://i.ibb.co.com/tpQP0mQp/jew-1.png"
+      "https://res.cloudinary.com/dqcuufrdo/image/upload/v1760716508/IMG_20251017_214657_135_bkwsjk.jpg",
+      "https://res.cloudinary.com/dqcuufrdo/image/upload/v1760716507/IMG_20251017_214657_382_zj55i3.jpg",
+      "https://res.cloudinary.com/dqcuufrdo/image/upload/v1760716506/IMG_20251017_214657_071_f3wl6l.jpg",
+      "https://res.cloudinary.com/dqcuufrdo/image/upload/v1760721210/IMG_20251017_214657_158_y2eiho.jpg",
+      "https://res.cloudinary.com/dqcuufrdo/image/upload/v1760716508/IMG_20251017_214657_640_kvbnmm.jpg",
+      "https://res.cloudinary.com/dqcuufrdo/image/upload/v1760716510/IMG_20251017_214657_684_zriwam.jpg",
+      "https://res.cloudinary.com/dqcuufrdo/image/upload/v1760716507/IMG_20251017_214657_664_r7pb5n.jpg"
     ]
   }
 ]

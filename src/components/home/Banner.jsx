@@ -60,7 +60,7 @@ const Banner = () => {
             >
               {bannerImages?.map((b) => (
                 <SwiperSlide key={b.id}>
-                  <LazyLoadImage className="w-full aspect-[6/2] object-top object-cover" src={b.img} alt={b.title} />
+                  <LazyLoadImage className="w-full aspect-[5/2] object-top object-cover" src={b.img} alt={b.title} />
                 </SwiperSlide>
               ))}
             </Swiper>
