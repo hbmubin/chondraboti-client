@@ -49,7 +49,7 @@ const Footer = () => {
         <div className="flex flex-col md:items-start items-center text-center md:text-start">
           <div className="flex flex-col text-stone-300 gap-3 font-light">
             <div className="">
-              <span> 123 Chondraboti Street, Shahbag, Dhaka-1000</span>
+              <span> Kamrangirchar, South City Corporation, Dhaka, Bangladesh</span>
             </div>
             <div>
               <span className="font-semibold text-xl">Email:</span>

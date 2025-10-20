@@ -9,7 +9,8 @@ import { useState } from "react";
 import OrderModal from "./OrderModal";
 import { Toaster } from "react-hot-toast";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-
+import InnerImageZoom from "react-inner-image-zoom";
+import "../../zoom/style.css";
 const ProductTop = ({ product }) => {
   const [selectedSize, setSelectedSize] = useState(null);
   const [quantity, setQuantity] = useState(1);
@@ -77,10 +78,10 @@ const ProductTop = ({ product }) => {
             spaceBetween={30}
             centeredSlides={true}
             speed={800}
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: true,
-            }}
+            // autoplay={{
+            //   delay: 5000,
+            //   disableOnInteraction: true,
+            // }}
             pagination={{
               clickable: true,
             }}
@@ -90,20 +91,24 @@ const ProductTop = ({ product }) => {
           >
             {product?.images.map((img, idx) => (
               <SwiperSlide key={idx} className="lg:px-16 aspect-[5/6] max-h-[460px]">
-                <LazyLoadImage className=" object-cover min-h-full min-w-full object-center" src={img} alt="" />
+<InnerImageZoom
+className=" zoom-img"
+    src={img}
+    zoomSrc={img}
+    zoomType="click"
+    zoomPreload
+  />
+                {/* <LazyLoadImage className=" object-cover min-h-full min-w-full object-center" src={img} alt="" /> */}
               </SwiperSlide>
             ))}
-            {/* <SwiperSlide className="lg:px-24 aspect-[5/6] max-h-96">
-              <img className=" object-cover min-h-full min-w-full object-center" src={item1} alt="" />
-            </SwiperSlide> */}
           </Swiper>
         </div>
         <div>
           <form onSubmit={handleOpenModal}>
             <h2 className="text-2xl font-medium">{product?.product_name}</h2>
             <div className=" md:text-xl text-base pt-3">
-              <span className="font-medium">৳{product?.price}</span>
-              <span className="line-through md:text-base text-sm text-stone-500 pl-2">৳{product?.discount_price}</span>
+              <span className="font-medium">৳{product?.discount_price}</span>
+              <span className="line-through md:text-base text-sm text-stone-500 pl-2">৳{product?.price}</span>
               <span className="md:text-base text-sm ml-2 text-orange-600 font-medium">{(((product.price - product.discount_price) / product.price) * 100).toFixed(0)}%OFF</span>
             </div>
             <div className={`pt-6 ${!product?.sizes && "hidden"}`}>

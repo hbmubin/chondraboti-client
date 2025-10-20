@@ -42,7 +42,7 @@ const ProductCard = ({product}) => {
       </div>
       </a>
       <div className="  pt-1 pb-2 md:px-3 px-1.5 md:text-base text-xs">
-        <span className="font-medium">৳{product?.price}</span> <span className="line-through md:text-sm text-xs text-stone-500">৳{product?.discount_price}</span>
+        <span className="font-medium">৳{product?.discount_price}</span> <span className="line-through md:text-sm text-xs text-stone-500">৳{product?.price}</span>
       </div>
     </div>
   );

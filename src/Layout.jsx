@@ -1,11 +1,12 @@
 import Nav from './components/Nav';
 import { Outlet } from 'react-router';
 import Footer from './components/Footer';
-import { UtiContext } from './provider/UtiProvider';
+import FloatingContactMenu from './components/FloatingContactMenu';
 
 const Layout = () => {
     return (
         <div className='font-mon'>
+            <FloatingContactMenu/>
             <Nav></Nav>
             <Outlet></Outlet>
             <Footer></Footer>

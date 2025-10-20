@@ -43,7 +43,7 @@ const Contact = () => {
           <div className="flex flex-col gap-6">
             <div>
               <h2 className="text-xl font-semibold text-gray-800">Address</h2>
-              <p className="text-gray-600 mt-1">123 Chondraboti Street,  Shahbag, Dhaka-1000</p>
+              <p className="text-gray-600 mt-1">Kamrangirchar, South City Corporation, Dhaka, Bangladesh</p>
             </div>
             <div>
               <h2 className="text-xl font-semibold text-gray-800">Phone</h2>

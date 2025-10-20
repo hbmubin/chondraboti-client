@@ -22,12 +22,12 @@ const OrderModal = ({ setIsOpen, productData }) => {
   const deliveryChargeList = [
     {
       value: 80,
-      label: "Outside Dhaka ( 80 TK )",
+      label: "Inside Dhaka ( 80 TK )",
     },
     {
-      value: 150,
-      label: "Inside Dhaka ( 150 TK )",
-    },
+      value: 140,
+      label: "Outside Dhaka ( 140 TK )",
+    }
   ];
 
   const handleSubmit = async (e) => {
